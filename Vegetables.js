@@ -3,9 +3,9 @@ function getByTag(){
     let type = url.searchParams.get('type')
     var dataUrl
     if (type == 1)
-        dataUrl = "http://172.16.82.2:9090/com/getByTag?tag="
+        dataUrl = "https://127.0.0.1:9090/com/getByTag?tag="
     else
-        dataUrl = "http://172.16.82.2:9090/com/search?key="
+        dataUrl = "https://127.0.0.1:9090/com/search?key="
     var tag = url.searchParams.get('tag');
     dataUrl += tag
     $('#tagTitle').text(tag)    

@@ -5,7 +5,7 @@ $(document).ready(()=>{
     //     $('#login-input-area').show()
     //     $('#login-user-area').hide()
     // }else{
-    //     let dataUrl = "http://172.16.82.2:9090/user/userVerify"            
+    //     let dataUrl = "https://127.0.0.1:9090/user/userVerify"            
     //     $.ajax({
     //         url: dataUrl,
     //         method: 'POST',
@@ -70,8 +70,8 @@ $(document).ready(()=>{
 // </tr> 
 
 function sendOrder() {
-    // var dataUrl = "http://172.16.82.2:9090/com/getAll"
-    let dataUrl = "http://172.16.82.2:9090/order/insertOrder"
+    // var dataUrl = "https://127.0.0.1:9090/com/getAll"
+    let dataUrl = "https://127.0.0.1:9090/order/insertOrder"
 
     cartMap = new Map(JSON.parse(localStorage.getItem("cartMap")))
     var jwt = localStorage.getItem("token");
