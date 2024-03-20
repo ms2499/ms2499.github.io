@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.0</title>
+     
+    <!-- slide link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">;
+    <!-- Jquery JavaScript 文件 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>   
+    <script src="order-page.js"></script>
+</head>
+
+<body>
+
+<!-- header section starts -->
+
+<header class="header">
+    <!-- 此處內容在header.html -->
+    <script src="header.js"></script>
+</header>
+
+<!-- header section ends -->
+
+<!-- order section starts -->
+
+<div class="cart">
+    <div class="top">
+        <p style="font-size:24px;">訂單查詢</p>
+    </div>
+    <table>
+        <thead>
+            <span style="font-size:18px;"> 訂單編號：
+                <select id="orderno" style="font-size:18px; margin-bottom: 20px;">
+                    <!-- <option>您的訂單編號</option>
+                            <option>2401060003</option>
+                            <option>2401060004</option>
+                            <option>2401060005</option>
+                            <option>2401060006</option> -->
+                </select>
+                <button style="font-size:18px; margin-left: 16px; color:#ff7800" onclick="searOrder()">查詢</button>
+            </span>
+        
+            <tr>
+                <td>商品圖片</td>
+                <td>商品名稱</td>
+                <td>單價</td>
+                <td>數量</td>
+                <td>總價</td>
+            </tr>
+        </thead>
+        <tbody id="ordercom">
+        <!-- <tr>
+            <td><img src="image/product1.jpg"></td>
+            <td>商品一</td>   
+            <td>199</td>
+            <td>2</td>
+            <td class="total">398</td>
+        </tr>
+        <tr>
+            <td><img src="image/product2.jpg"></td>
+            <td>商品二</td>   
+            <td>299</td>
+            <td>1</td>
+            <td class="total">299</td>
+        </tr> -->
+        </tbody>
+    </table>
+    <div class="foot">
+        <span>訂單總計：</span><span class="sumTotal"></span>
+        <button>問題回報</button>
+    </div>
+</div>
+
+<!-- order section ends -->
+
+<!-- footer section starts -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> OOO購物 <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptas, sed, sunt ut cum quisquam commodi repudiandae iure id odit illum exercitationem in facere quia.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> qwerwasd@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> taipei, taiwan </a>  
+        </div>
+        
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html#home" class="links"> <i class="fas fa-arrow-right"></i> News</a>
+            <a href="index.html#products" class="links"> <i class="fas fa-arrow-right"></i> 優惠商品 </a>
+            <a href="index.html#categories" class="links"> <i class="fas fa-arrow-right"></i> 商品分類 </a>
+            <a href="index.html#features" class="links"> <i class="fas fa-arrow-right"></i> 產品特色 </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.jpg" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> syscom </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- js link -->
+<script src="script.js"></script>
+
+<style>
+    thead {
+        font-size: 2.5em;
+    }
+    tbody tr {
+        font-size: 2em;
+    }
+    .foot span {
+        font-size: 1.5em;
+    }    
+</style>
+
+</body>
+</html>

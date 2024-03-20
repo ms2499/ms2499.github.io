@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.0</title>
+     
+    <!-- slide link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">;
+    <!-- Jquery JavaScript 文件 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>   
+    <!-- shopping-cart-page.js 取得購物車商品 -->
+    <script src='shopping-cart-page.js'></script>
+</head>
+
+<body>
+
+<!-- header section starts -->
+
+<header class="header">
+    <!-- 此處內容在header.html -->
+    <script src="header.js"></script>
+</header>
+
+<!-- header section ends -->
+
+<!-- cart section starts -->
+<div class="cart">
+    <div class="top">
+        <p style="font-size:24px;">購物車</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr> 
+                <td><input type="checkbox" id="all"></td>
+                <td>商品照片</td>
+                <td>商品名稱</td>   
+                <td>單價</td>
+                <td>數量</td>
+                <td>總價</td>
+                <td>動作</td>
+            </tr>
+        </thead>
+        <tbody id="cartTable">
+            <!-- <tr>
+                <td><input type="checkbox"id="check"></td>
+                <td><img src="image/product1.jpg"></td>
+                <td>商品一</td>   
+                <td>199</td>
+                <td><button class="cal">-</button><input type="text" readonly><button class="cal">+</button></td>
+                <td class="total">0</td>
+                <td><p class="del">刪除</p></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"id="check"></td>
+                <td><img src="image/product2.jpg"></td>
+                <td>商品二</td>   
+                <td>299</td>
+                <td><button class="cal">-</button><input type="text" readonly><button class="cal">+</button></td>
+                <td class="total">0</td>
+                <td><p class="del">刪除</p></td>
+            </tr>        -->
+        </tbody>
+    </table>
+    <div class="top">
+        <p style="font-size:22px;">購買資料</p>
+    </div>
+    <form action="/formprocess.php" method="post" class="checkout">
+        <div>
+        <p>訂購人:</p>
+        <p><input type="text" name="name"></p>
+    
+        <p style="margin-top: 20px">送貨地址:</p>
+        <p><textarea name="address" rows="5" cols="22"></textarea></p>
+        </div>
+
+        <div>
+        <p>送貨方式: </p>
+        <p><input type="radio" name="delivery" value="html"> 7-11</p>
+        <p><input type="radio" name="delivery" value="css"> 全家</p>
+        <p><input type="radio" name="delivery" value="js"> 宅配</p>
+    
+        <p style="margin-top: 10px">付款方式:</p>
+        <p><input type="radio" name="payment" value="html"> 貨到付款</p>
+        <p><input type="radio" name="payment" value="css"> 線上刷卡</p>
+        <p><input type="radio" name="payment" value="js"> 匯款</p>
+        </div>
+    </form>
+    <div class="foot">
+        <span>商品總計：</span><span class="sumTotal"></span>
+        <!-- <a href="checkout.html"> -->
+        <a href="#">
+            <button onclick="sendOrder()">結帳</button>
+        </a>
+    </div>
+</div>
+<!-- cart section ends -->
+
+<!-- footer section starts -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> OOO購物 <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptas, sed, sunt ut cum quisquam commodi repudiandae iure id odit illum exercitationem in facere quia.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> qwerwasd@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> taipei, taiwan </a>  
+        </div>
+        
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html#home" class="links"> <i class="fas fa-arrow-right"></i> News</a>
+            <a href="index.html#products" class="links"> <i class="fas fa-arrow-right"></i> 優惠商品 </a>
+            <a href="index.html#categories" class="links"> <i class="fas fa-arrow-right"></i> 商品分類 </a>
+            <a href="index.html#features" class="links"> <i class="fas fa-arrow-right"></i> 產品特色 </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.jpg" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> syscom </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- js link -->
+<script src="script.js"></script>
+
+<style>
+    thead {
+        font-size: 2.5em;
+    }
+
+    tbody {
+        font-size: 2em;
+    }
+
+    .foot span {
+        font-size: 1.5em;
+    }
+</style>
+
+</body>
+</html>
+
+<script>
+function change(){
+    let cartMap = new Map(JSON.parse(localStorage.getItem("cartMap")))
+    console.log(cartMap)
+    //刪除
+    let _del=document.querySelectorAll('.del');
+    [..._del].forEach(_del=>{
+        _del.onclick=function(event){
+            let comId = Number($(event.target).parent().parent().children().eq(0).text())
+            console.log(comId)
+            cartMap.delete(comId)
+            localStorage.setItem("cartMap", JSON.stringify(Array.from(cartMap.entries())))
+            $('#cartArea').children('#'+comId).remove()
+            _del.parentNode.parentNode.remove()
+            sumTotal()
+            //location.reload()
+        }
+    });
+    //單價
+    let _cals=document.querySelectorAll('.cal')
+    _cals.forEach(_cal=>{
+        _cal.onclick=function(){
+            let opera=_cal.innerHTML
+            let _input=this.parentNode.childNodes[1]
+            if(_input.value<=1&&opera=='-'){
+                return
+            }
+            let comId = Number($(event.target).parent().parent().children().eq(0).text())
+            if(opera=='+'){
+                ++cartMap.get(comId)[1]
+            }else if(opera=='-'){
+                --cartMap.get(comId)[1]
+            }
+            localStorage.setItem("cartMap", JSON.stringify(Array.from(cartMap.entries())))
+            $('#cartArea').children('#'+comId).find('.content').find('.price').text('$'+cartMap.get(comId)[1]*cartMap.get(comId)[2])
+            $('#cartArea').children('#'+comId).find('.content').find('.quantity').text('qty : '+cartMap.get(comId)[1])
+            //location.reload()
+            let num=eval(_input.value*1+opera+1)
+            _input.value=num
+            let price=this.parentNode.previousElementSibling.innerHTML*1
+            let total=price*num
+            this.parentNode.nextElementSibling.innerHTML=total
+            sumTotal()
+        }
+    })
+    //多選
+    let _all=document.querySelector('#all')
+    let _check=document.querySelectorAll('#check')
+    _all.onclick=function(){
+        _check.forEach(_check=>{
+            _check.checked=_all.checked
+    })
+    sumTotal()
+    }
+    //反選
+    _check.forEach(radio=>{
+        radio.onclick=function(){
+            let _checkedboxes=document.querySelectorAll('input:checked:not(#all)')
+            if(_check.length==_checkedboxes.length){
+                _all.checked=true
+            }else{
+                _all.checked=false
+            }
+            sumTotal()
+        } 
+    })
+    
+    //總計
+    let _sumTotal=document.querySelector('.sumTotal')
+    function sumTotal() {
+        let _checkedboxes=document.querySelectorAll('input:checked:not(#all)')
+        let sumTotal=0
+        _checkedboxes.forEach(_checkedbox=>{
+            sumTotal+=_checkedbox.parentNode.parentNode.children[6].innerText * 1 
+        })
+        _sumTotal.innerHTML=sumTotal
+    }
+}
+</script>

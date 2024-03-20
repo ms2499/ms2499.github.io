@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.0</title>
+     
+    <!-- slide link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">;
+
+    <!-- JQuery連結 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- SimplePagination連結 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
+
+    <!-- Vegetables.js 取得商品 -->
+    <script src='Vegetables.js'></script>
+
+</head>
+
+<body>
+
+<!-- header section starts -->
+
+<header class="header">
+    <!-- 此處內容在header.html -->
+    <script src="header.js"></script>
+</header>
+
+<!-- header section ends -->
+<!-- product section starts -->
+
+<h1 id="tagTitle" style="margin-top: 100px; font-size: 30px; text-align: center; color: #130f40">Vegetables</h1>
+    
+<!-- 所有項目 -->
+<div class="row" id="list-wrapper">
+    <script>
+        let row = getByTag()
+    </script>   
+    
+    <!-- 項目 -->
+    <!-- <div class="list-item">
+        <div class="one-product">
+            <img src="image/product1.jpg" alt="">
+            <h3>watermalon</h3>
+            <div class="price"> $ 100 </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="one-product">
+            <img src="image/product2.jpg" alt="">
+            <h3>onion</h3>
+            <div class="price"> $ 100 </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="one-product">
+            <img src="image/product3.jpg" alt="">
+            <h3>watermalon</h3>
+            <div class="price"> $ 100 </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="one-product">
+            <img src="image/product4.jpg" alt="">
+            <h3>watermalon</h3>
+            <div class="price"> $ 100 </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="one-product">
+            <img src="image/product5.jpg" alt="">
+            <h3>watermalon</h3>
+            <div class="price"> $ 100 </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="one-product">
+            <img src="image/product6.jpg" alt="">
+            <h3>watermalon</h3>
+            <div class="price"> $ 100 </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="one-product">
+            <img src="image/product7.jpg" alt="">
+            <h3>watermalon</h3>
+            <div class="price"> $ 100 </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+    <div class="list-item">
+        <div class="one-product">
+            <img src="image/product8.jpg" alt="">
+            <h3>watermalon</h3>
+            <div class="price"> $ 100 </div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div> -->
+
+</div>
+
+<!-- 頁數 -->
+<div id="pagination-container">
+
+</div>
+
+<!-- product section ends -->
+
+<!-- footer section starts -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> OOO購物 <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptas, sed, sunt ut cum quisquam commodi repudiandae iure id odit illum exercitationem in facere quia.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> qwerwasd@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> taipei, taiwan </a>  
+        </div>
+        
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html#home" class="links"> <i class="fas fa-arrow-right"></i> News</a>
+            <a href="index.html#products" class="links"> <i class="fas fa-arrow-right"></i> 優惠商品 </a>
+            <a href="index.html#categories" class="links"> <i class="fas fa-arrow-right"></i> 商品分類 </a>
+            <a href="index.html#features" class="links"> <i class="fas fa-arrow-right"></i> 產品特色 </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.jpg" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> syscom </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- js link -->
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+<!-- JQuery程式 -->
+<script>
+    function setpage() {
+        // 每個頁面要顯示幾格項目
+        var perPage = 4;
+        // 總共有多少個項目
+        var numItems = $(".list-item").length;
+
+        $(".list-item").slice(perPage).hide();
+        $('#pagination-container').pagination({
+            items: numItems,
+            itemsOnPage: perPage,
+            prevText: "&laquo;",
+            nextText: "&raquo;",
+            onPageClick: function(pageNumber){
+                // 計算 起始以及結束
+                var from = perPage * (pageNumber - 1);
+                var to = from + perPage;
+                $(".list-item").hide().slice(from, to).show();
+            }
+        })
+    }
+    
+</script>

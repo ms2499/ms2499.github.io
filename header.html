@@ -1,0 +1,86 @@
+<a href="index.html" class="logo"><i class="fas fa-shopping-basket"></i> OOO購物 </a>
+    
+<nav class="navbar">
+    <a href="index.html#home">News</a>
+    <a href="index.html#products">優惠商品</a>
+    <a href="index.html#categories">商品分類</a>
+    <a href="index.html#features">產品特色</a>
+    <a href="order-page.html">訂單查詢</a>
+    <a href="shopping-cart-page.html">購物車</a>
+</nav>
+
+<div class="icons">
+    <div class="fas fa-bars" id="menu-btn"></div>
+    <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    <div class="fas fa-user" id="login-btn"></div>
+</div>
+
+<form action="" class="search-form">
+    <input type="search" id="search-box" placeholder="search here...">
+    <label for="search-box" class="fas fa-search" id="searchBtn"></label>
+</form>
+
+<div class="shopping-cart">
+    <div id="cartArea" style="overflow: auto; max-height: 50em;">
+        <!-- <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/product1.jpg" alt="">
+            <div class="content">
+                <h3>watermalon</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/product2.jpg" alt="">
+            <div class="content">
+                <h3>onion</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/product3.jpg" alt="">
+            <div class="content">
+                <h3>chicken</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div> -->
+    </div>
+    <div class="total"> total : $19.69/- </div>
+    <a href="shopping-cart-page.html" class="btn">checkout</a>
+</div>
+
+<form action="" class="login-form" onsubmit="return false;">
+    <div id="login-input-area" style="display: block">
+        <h3>login now</h3>
+        <input id="loginAccount" type="text" placeholder="your account" class="box">
+        <input id="loginPassword" type="password" placeholder="your password" class="box">
+        <p><a href="#">忘記密碼</a></p>
+        <p>還不是會員?&nbsp;<button id="go-register" type="button">註冊</button>
+        </p>
+        <button id="login" type="submit" placeholder="login now" class="btn">登入</button>
+    </div>
+    <div id="login-user-area" style="display: none;">
+        <div style="width: 100%;">
+            <img class="circleImg" src="image/博美1.jpg"  />
+        </div>
+        <p><a href="#">檢視個人檔案</a></p>
+        <button id="logout" type="button" placeholder="logout now" class="btn">登出</button>
+    </div>
+</form>    
+
+<form action="" class="register-form" onsubmit="return false;">
+    <h3>Register</h3>
+    <input id="regAccount" type="text" placeholder="your account" class="box regForm" required>
+    <input id="regPassword" type="password" placeholder="your password" class="box regForm" required>
+    <input id="regName" type="text" placeholder="your name" class="box regForm" required>
+    <input id="regEmail" type="email" placeholder="your email" class="box regForm" required>
+    <input id="regPhone" type="tel" placeholder="your phone" class="box regForm" required>
+    <input id="regAddress" type="text" placeholder="your Address" class="box regForm" required>
+    <button id="register-btn" type="submit" placeholder="Register" class="btn">註冊</button>
+</form>

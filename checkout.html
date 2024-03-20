@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.0</title>
+     
+    <!-- slide link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">;
+    <!-- Jquery JavaScript 文件 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>   
+</head>
+
+<body>
+
+<!-- header section starts -->
+
+<header class="header">
+    <!-- 此處內容在header.html -->
+    <script src="header.js"></script>
+</header>
+
+<!-- header section ends -->
+
+<!-- order section starts -->
+
+<div class="cart">
+    <div class="top">
+        <p style="font-size:22px;">購買資料</p>
+    </div>
+    <form action="/formprocess.php" method="post" class="checkout">
+        <div>
+        <p>訂購人:</p>
+        <p><input type="text" name="name"></p>
+    
+        <p style="margin-top: 20px">送貨地址:</p>
+        <p><textarea name="address" rows="5" cols="22"></textarea></p>
+        </div>
+
+        <div>
+        <p>送貨方式: </p>
+        <p><input type="radio" name="delivery" value="html"> 7-11</p>
+        <p><input type="radio" name="delivery" value="css"> 全家</p>
+        <p><input type="radio" name="delivery" value="js"> 宅配</p>
+    
+        <p style="margin-top: 10px">付款方式:</p>
+        <p><input type="radio" name="payment" value="html"> 貨到付款</p>
+        <p><input type="radio" name="payment" value="css"> 線上刷卡</p>
+        <p><input type="radio" name="payment" value="js"> 匯款</p>
+        </div>
+    </form>
+    <div class="foot">
+        <a href="order-page.html"><button>送出資料</button></a>
+    </div>
+</div>
+
+<!-- order section ends -->
+
+<!-- footer section starts -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> OOO購物 <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptas, sed, sunt ut cum quisquam commodi repudiandae iure id odit illum exercitationem in facere quia.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> qwerwasd@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> taipei, taiwan </a>  
+        </div>
+        
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html#home" class="links"> <i class="fas fa-arrow-right"></i> News</a>
+            <a href="index.html#products" class="links"> <i class="fas fa-arrow-right"></i> 優惠商品 </a>
+            <a href="index.html#categories" class="links"> <i class="fas fa-arrow-right"></i> 商品分類 </a>
+            <a href="index.html#features" class="links"> <i class="fas fa-arrow-right"></i> 產品特色 </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.jpg" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> syscom </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- js link -->
+<script src="script.js"></script>
+
+</body>
+</html>
