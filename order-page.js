@@ -7,7 +7,7 @@ $(document).ready(()=>{
         $('#login-input-area').show()
         $('#login-user-area').hide()
     }else{
-        let dataUrl = "https://127.0.0.1:9090/user/userVerify"            
+        let dataUrl = apiUrl + "/user/userVerify"            
         $.ajax({
             url: dataUrl,
             method: 'POST',
@@ -38,7 +38,7 @@ $(document).ready(()=>{
     }
 
     
-    let dataUrl = "https://127.0.0.1:9090/order/getNoByAccount?account="
+    let dataUrl = apiUrl + "/order/getNoByAccount?account="
     dataUrl += account
     console.log(dataUrl)
 
@@ -70,7 +70,7 @@ $(document).ready(()=>{
 
 function searOrder(){
 
-    let dataUrl = "https://127.0.0.1:9090/order/getByListNo?no="
+    let dataUrl = apiUrl + "/order/getByListNo?no="
     let orderno = $('#orderno').val()
     dataUrl += orderno
     //console.log(dataUrl)
@@ -92,7 +92,7 @@ function searOrder(){
             var resList = JSON.parse(res) // string 轉 JSON object
             //console.log(resList)
             $.each(resList, function(i, n){
-                dataUrl = "https://127.0.0.1:9090/com/getById?id="
+                dataUrl = apiUrl + "/com/getById?id="
                 dataUrl += n.orderCommodityID
                 $.ajax({
                     url: dataUrl,

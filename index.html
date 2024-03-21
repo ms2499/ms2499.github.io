@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style.css">;
     <!-- Jquery JavaScript 文件 -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>    
+    <script src="global.js"></script>
 </head>
 
 <body>
@@ -348,7 +349,7 @@
     //網頁載入完成後處理
     $(()=>{
         //查詢優惠商品
-        let dataUrl = "https://127.0.0.1:9090/com/getDiscountCom"
+        let dataUrl = apiUrl + "/com/getDiscountCom"
     
         $.ajax({
             url: dataUrl,
@@ -387,7 +388,7 @@
         });
     
         //查詢全部分類
-        dataUrl = "https://127.0.0.1:9090/tag/getAll"
+        dataUrl = apiUrl + "/tag/getAll"
     
         $.ajax({
             url: dataUrl,
@@ -401,7 +402,7 @@
                 $.each(res, (i, n) => {
                     let tagImgSrc = ""
                     $.ajax({
-                        url: "https://127.0.0.1:9090/com/getByTag?tag=" + n.commoditySubTag,
+                        url: apiUrl + "/com/getByTag?tag=" + n.commoditySubTag,
                         method: 'GET',
                         dataType: 'json',
                         async: false,
