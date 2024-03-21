@@ -1,1 +1,1 @@
-var apiUrl = "https://172.16.82.2:10443"
+var apiUrl = "https://172.16.82.2:9090"
