@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.0</title>
+
+    <!-- slide link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- font icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">;
+    <!-- Jquery JavaScript 文件 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>    
+    <script src="global.js"></script>
+    <!-- SimplePagination連結 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>    
+</head>
+
+<body>
+
+<!-- header section starts -->
+
+<header class="header">
+    <!-- 此處內容在header.html -->
+    <script src="header.js"></script>
+</header>
+
+<!-- header section ends -->
+
+<!-- products section starts -->
+
+<section class="products" id="products" style="padding-top: 8em;">
+    <h1 class="heading"> <span>全部商品</span> </h1>
+
+    <!-- <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <p style="display: none;">1</p>
+                <img src="image/product1.jpg" alt="">
+                <h3>watermalon</h3>
+                <div class="price"> $ 100 </div>
+                <button class="btn addCartBtn" onclick="addCartBtn(this)">add to cart</button>
+            </div>
+
+            <div class="swiper-slide box">
+                <p style="display: none;">2</p>
+                <img src="image/product2.jpg" alt="">
+                <h3>onion</h3>
+                <div class="price"> $ 100 </div>
+                <button class="btn addCartBtn" onclick="addCartBtn(this)">add to cart</button>
+            </div>
+
+            <div class="swiper-slide box">
+                <p style="display: none;">3</p>
+                <img src="image/product3.jpg" alt="">
+                <h3>chicken</h3>
+                <div class="price"> $ 100 </div>
+                <button class="btn addCartBtn" onclick="addCartBtn(this)">add to cart</button>
+            </div>
+        
+        </div>
+    
+    </div>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <p style="display: none;">5</p>
+                <img src="image/product5.jpg" alt="">
+                <h3>potato</h3>
+                <div class="price"> $ 100 </div>
+                <button class="btn addCartBtn" onclick="addCartBtn(this)">add to cart</button>
+            </div>
+
+            <div class="swiper-slide box">
+                <p style="display: none;">6</p>
+                <img src="image/product6.jpg" alt="">
+                <h3>avocado</h3>
+                <div class="price"> $ 100</div>
+                <button class="btn addCartBtn" onclick="addCartBtn(this)">add to cart</button>
+            </div>
+
+            <div class="swiper-slide box">
+                <p style="display: none;">7</p>
+                <img src="image/product7.jpg" alt="">
+                <h3>carrot</h3>
+                <div class="price"> $ 100 </div>
+                <button class="btn addCartBtn" onclick="addCartBtn(this)">add to cart</button>
+            </div>
+
+            <div class="swiper-slide box">  
+                <p style="display: none;">8</p>
+                <img src="image/product8.jpg" alt="">
+                <h3>green lemon</h3>
+                <div class="price"> $ 100 </div>
+                <button class="btn addCartBtn" onclick="addCartBtn(this)">add to cart</button>
+            </div>
+        
+        </div>
+    
+    </div> -->
+<!-- 頁數 -->
+<div id="pagination-container">
+
+</div>
+</section>
+
+<!-- products section ends -->
+
+
+
+<!-- footer section starts -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> OOO購物 <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod officia voluptas, sed, sunt ut cum quisquam commodi repudiandae iure id odit illum exercitationem in facere quia.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> qwerwasd@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> taipei, taiwan </a>  
+        </div>
+        
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html#home" class="links"> <i class="fas fa-arrow-right"></i> News</a>
+            <a href="index.html#products" class="links"> <i class="fas fa-arrow-right"></i> 優惠商品 </a>
+            <a href="index.html#categories" class="links"> <i class="fas fa-arrow-right"></i> 商品分類 </a>
+            <a href="index.html#features" class="links"> <i class="fas fa-arrow-right"></i> 產品特色 </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.jpg" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> syscom </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- js link -->
+<script src="script.js"></script>
+</body>
+</html>
+
+<script>
+    //網頁載入完成後處理
+    $(()=>{
+        //查詢優惠商品
+        let dataUrl = apiUrl + "/com/getAll"
+    
+        $.ajax({
+            url: dataUrl,
+            method: 'GET',
+            dataType: 'json',
+            async: true,
+            contentType: 'application/json;charset=utf-8',
+            cache: false,
+        
+            success: res => {
+                console.log(res)
+                let rows = Math.ceil(res.length) / 3 //有幾行，每行3個商品，無條件進位
+                for (let i = 0; i < rows; i++) {
+                    $('#products').append('<div class="swiper product-slider">'+
+                                          '<div class="swiper-wrapper" id="swiper' + i + '">')
+                    let swiper = $('#swiper' + i)
+                    for (let j = 0; j < 3; j++) {
+                        let num = j + i * 3
+                        let item = res[num]
+                        if (item != null)
+                            $(swiper).append('<div class="swiper-slide box">'+
+                                                '<p style="display: none;">'+item.commodityID+'</p>'+
+                                                '<img src="'+item.commodityImgPath+'" alt="">'+
+                                                '<h3>'+item.commodityName+'</h3>'+
+                                                '<div class="price"> $ '+item.commodityPrice+' </div>'+
+                                                '<button class="btn addCartBtn" onclick="addCartBtn(this)">add to cart</button>'+
+                                            '</div>')
+                    }
+                    $('#products').append('</div>'+
+                                          '</div>')
+                }
+                swiperOn()          
+                setpage()
+            },
+        
+            error: err => {
+                console.log(err)
+            },
+        });
+    })    
+
+    function swiperOn(){
+        var swiper = new Swiper(".product-slider", {
+            loop: false,
+            spaceBetween: 20,
+            // autoplay: {
+            //     delay: 7500,
+            //     disableOnInteraction: false,
+            // },
+            centeredSlides: false,
+            breakpoints: {
+              0: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1020: {
+                slidesPerView: 3,
+              },
+            },
+        });
+    }    
+
+    function setpage() {
+        // 每個頁面要顯示幾格項目
+        var perPage = 9;
+        // 總共有多少個項目
+        var numItems = $(".swiper-slide").length;
+
+        $(".swiper-slide").slice(perPage).hide();
+        $('#pagination-container').pagination({
+            items: numItems,
+            itemsOnPage: perPage,
+            prevText: "&laquo;",
+            nextText: "&raquo;",
+            onPageClick: function(pageNumber){
+                // 計算 起始以及結束
+                var from = perPage * (pageNumber - 1);
+                var to = from + perPage;
+                $(".swiper-slide").hide().slice(from, to).show();
+            }
+        })
+    }
+</script>
