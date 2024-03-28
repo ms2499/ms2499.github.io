@@ -1,27 +1,3 @@
-function swiperOn(){
-    var swiper = new Swiper(".product-slider", {
-        loop: true,
-        spaceBetween: 20,
-        autoplay: {
-            delay: 7500,
-            disableOnInteraction: false,
-        },
-        centeredSlides: true,
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1020: {
-            slidesPerView: 3,
-          },
-        },
-    });
-}
-
-
 //新增商品到購物車事件
 function addCartBtn(obj){
 // $('.addCartBtn').on('click',(event)=>{
@@ -33,9 +9,10 @@ function addCartBtn(obj){
     let itemInfo = new Array(4)
     if (cartMap.has(comId)){
         //購物車已有該商品
-        console.log("購物車已有該商品")
+        //console.log("購物車已有該商品")
         let qty = ++cartMap.get(comId)[1]
-        console.log(qty)
+        //console.log(qty)
+        itemInfo[0] = cartMap.get(comId)[0]
         $('#cartArea').children('#'+comId).find('.content').find('.price').text('$'+qty*cartMap.get(comId)[2])
         $('#cartArea').children('#'+comId).find('.content').find('.quantity').text('qty : '+qty)
     }
@@ -46,9 +23,11 @@ function addCartBtn(obj){
         itemInfo[3] = $(obj).parent().children('img').attr('src')
         cartMap.set(comId, itemInfo)
         add2Cart(comId, itemInfo)
+
     }
     localStorage.setItem("cartMap", JSON.stringify(Array.from(cartMap.entries())))
-    updateCartTotal()
+    updateCartTotal()    
+    window.alert("新增"+itemInfo[0]+"到購物車!")
 }
 
 function add2Cart(key, item){
