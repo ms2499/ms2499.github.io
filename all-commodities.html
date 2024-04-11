@@ -303,7 +303,12 @@
                     $("#products").empty()
                     getByRow(pageNumber, 12)
                 }else{
-                    let lastId = $(".swiper-slide").last().children().eq(0).text()
+                    let lastId
+
+                    if (pageNumber == 1)
+                        lastId = 0
+                    else
+                        lastId = $(".swiper-slide").last().children().eq(0).text()
                     $("#products").empty()
                     getByRow(lastId, 12)
                 }
