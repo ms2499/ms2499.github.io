@@ -184,4 +184,18 @@ $('.header').load('header.html', function(){
         let type = 2
         location.href="product-page.html?type="+type+"&tag="+tag
     })
+
+    if(typeof(EventSource)!=="undefined")
+    {        
+        var source = new EventSource(apiUrl + "/sse/get");
+        source.onmessage = function(event)
+        {
+            // document.getElementById("result").innerHTML+=event.data + "<br>";
+            document.getElementById('userMsg').innerText = event.data ;
+        };
+    }
+    else
+    {
+        document.getElementById("userMsg").innerHTML="瀏覽器不支持 server-sent...";
+    }        
 })
