@@ -78,7 +78,7 @@ $('.header').load('header.html', function(){
             cache: false,
 
             success: res => {
-                window.alert(res)
+                window.alert("註冊成功!")
             },
 
             error: err => {

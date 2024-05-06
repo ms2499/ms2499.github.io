@@ -233,7 +233,7 @@ function change(){
     //反選
     _check.forEach(radio=>{
         radio.onclick=function(){
-            let _checkedboxes=document.querySelectorAll('input:checked:not(#all)')
+            let _checkedboxes=document.querySelectorAll('input[type=checkbox]:checked:not(#all)')
             if(_check.length==_checkedboxes.length){
                 _all.checked=true
             }else{
@@ -246,7 +246,7 @@ function change(){
     //總計
     let _sumTotal=document.querySelector('.sumTotal')
     function sumTotal() {
-        let _checkedboxes=document.querySelectorAll('input:checked:not(#all)')
+        let _checkedboxes=document.querySelectorAll('input[type=checkbox]:checked:not(#all)')
         let sumTotal=0
         _checkedboxes.forEach(_checkedbox=>{
             sumTotal+=_checkedbox.parentNode.parentNode.children[6].innerText * 1 
