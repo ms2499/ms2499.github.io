@@ -79,7 +79,7 @@ function sendOrder() {
 
     let nowNameList = [];
     let jsonData = {}
-    let checkboxes = $('input:checked:not(#all)')
+    let checkboxes = $('input[type=checkbox]:checked:not(#all)')
 
     $.each($(checkboxes), (i, n) => {
         let root = $(n).parent().parent()
